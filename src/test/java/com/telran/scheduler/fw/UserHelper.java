@@ -4,6 +4,8 @@ import com.telran.scheduler.model.User;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 
+import java.util.Random;
+
 public class UserHelper extends HelperBase {
 
 	public UserHelper(AppiumDriver driver) {
@@ -23,5 +25,13 @@ public class UserHelper extends HelperBase {
 
 	public void defaultLogin() {
 		login(new User().setEmail("etwaemail@gmail.com").setPassword("etwageheimzahl2021"));
+	}
+
+	public void register() {
+		Random random = new Random();
+
+		int r = random.nextInt(100);
+
+		login(new User().setEmail("at" + r + "@gmail.com").setPassword("123098qwerty"));
 	}
 }

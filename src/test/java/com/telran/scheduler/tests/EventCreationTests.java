@@ -15,7 +15,7 @@ public class EventCreationTests extends TestBase {
 	}
 
 	@Test
-	public void createEventPositiveTest() {
+	public void createEventPositiveTest() throws InterruptedException {
 		int quantityBeforeAdd;
 		int quantityAfterAdd;
 		quantityBeforeAdd = app.getEvent().getTotalEvents();
@@ -23,6 +23,8 @@ public class EventCreationTests extends TestBase {
 		app.getEvent().tapOnPlusButton();
 		// tap on Pencil
 		app.getEvent().tapOnPencil();
+		Thread.sleep(10000);
+		app.getEvent().moveElementRightToLeft();
 		// fill Event Form
 		app.getEvent().fillEventCreationForm(new Event().setEventTitle("Event")
 				.setEventType("1").setBreaks(2).setWage("150"));
@@ -32,4 +34,6 @@ public class EventCreationTests extends TestBase {
 		// assert isEventPresent
 		Assert.assertEquals(quantityAfterAdd, quantityBeforeAdd + 1);
 	}
+
+
 }
