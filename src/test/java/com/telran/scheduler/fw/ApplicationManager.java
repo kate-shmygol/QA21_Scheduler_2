@@ -52,6 +52,7 @@ public class ApplicationManager {
 		wage = new WageHelper(driver);
 	}
 
+
 	public void stop() {
 		driver.quit();
 	}
