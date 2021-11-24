@@ -20,8 +20,8 @@ public class RestAssuredLoginTests {
 	@Test
 	public void loginSuccessTest() {
 		AuthRequestDto requestDto = AuthRequestDto.builder()
-				.email("etwaemail@gmail.com")
-				.password("etwageheimzahl2021")
+				.email("world@gmail.com")
+				.password("World2021")
 				.build();
 
 		AuthResponseDto responseDto = given()
@@ -41,8 +41,8 @@ public class RestAssuredLoginTests {
 	@Test
 	public void loginWrongPasswordTest() {
 		AuthRequestDto requestDto = AuthRequestDto.builder()
-				.email("etwaemail@gmail.com")
-				.password("etwageheimzahl20")
+				.email("world@gmail.com")
+				.password("World20")
 				.build();
 
 		String message = given()
@@ -61,8 +61,8 @@ public class RestAssuredLoginTests {
 	public void registrationSuccessTest() {
 		int index = (int) (System.currentTimeMillis() / 1000) % 3600;
 		AuthRequestDto requestDto = AuthRequestDto.builder()
-				.email("etwaemail" + index + "@gmail.com")
-				.password("etwageheimzahl2021")
+				.email("world" + index + "@gmail.com")
+				.password("World2021")
 				.build();
 
 		String message = given()

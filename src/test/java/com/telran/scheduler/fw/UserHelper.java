@@ -24,7 +24,7 @@ public class UserHelper extends HelperBase {
 	}
 
 	public void defaultLogin() {
-		login(new User().setEmail("etwaemail@gmail.com").setPassword("etwageheimzahl2021"));
+		login(new User().setEmail("world@gmail.com").setPassword("World2021"));
 	}
 
 	public void register() {
@@ -32,6 +32,6 @@ public class UserHelper extends HelperBase {
 
 		int r = random.nextInt(100);
 
-		login(new User().setEmail("at" + r + "@gmail.com").setPassword("123098qwerty"));
+		login(new User().setEmail("at" + r + "@gmail.com").setPassword("123098qwertY"));
 	}
 }

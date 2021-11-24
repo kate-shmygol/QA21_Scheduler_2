@@ -8,15 +8,8 @@ public class LoginTests extends TestBase {
 
 	@Test
 	public void loginPositiveTest() {
-		app.getUser().login(new User().setEmail("etwaemail@gmail.com").setPassword("etwageheimzahl2021"));
+		app.getUser().login(new User().setEmail("world@gmail.com").setPassword("World2021"));
 		Assert.assertTrue(app.getEvent().isContainerReportPresent());
-	}
-
-	@Test
-	public void registerPositiveTest() {
-		// same, but with other new data - login
-		// from Contact - project - every time - new data
-		// assert
 	}
 
 	// id = log_email_input

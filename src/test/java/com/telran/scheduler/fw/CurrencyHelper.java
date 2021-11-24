@@ -22,7 +22,7 @@ public class CurrencyHelper extends HelperBase {
 	private void selectCurrency(String currency) {
 		if (!getSelectedCurrency().equals(currency)) {
 			swipeUp();
-			tap(By.xpath("//android.widget.TextView[@text=' " + currency + " ']"));
+			tap(By.xpath("//android.widget.TextView[@text='" + currency + "']"));
 			// currency = android.widget.TextView - Bahamian dollar
 		}
 	}
