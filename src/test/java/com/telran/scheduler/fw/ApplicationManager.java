@@ -37,7 +37,7 @@ public class ApplicationManager {
 		capabilities = new DesiredCapabilities();
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("platformVersion", "8.0.0");
-		capabilities.setCapability("deviceName", "qa21_mob");
+		capabilities.setCapability("deviceName", "qa21m_mob");
 		capabilities.setCapability("automationName", "Appium");
 		capabilities.setCapability("appPackage", "com.example.svetlana.scheduler");
 		capabilities.setCapability("appActivity", ".presentation.splashScreen.SplashScreenActivity");
