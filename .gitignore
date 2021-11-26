@@ -1,15 +1,48 @@
+
+/src/main/resources/application.yml
+
+*.iml
+*.json
+
+.idea/*
+.idea/
+out/
+/out/
+debug/
+
+.idea_modules/
+
+*.class
+*.jar
+*.war
+*.ear
+*.tmp
+*.exe
+
+thumbs.db
+.DS_Store
+
+test/
+target/generated-sources/
+target/
+/.classpath
+/.project
+.settings/
+
+*.log
+*.png
+
+*.xcodeproj
+
+# gradle
 .gradle
 /build/
-
-out/
 
 gradlew
 gradle
 gradlew.bat
 
 settings.gradle
-
-.idea\
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -23,5 +56,3 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-*.log
-*.png
